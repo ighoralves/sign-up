@@ -155,7 +155,7 @@ table {
 .Main-card {
   width: 400px;
   padding: 100px 30px 32px;
-  border-radius: 1.25rem;
+  border-radius: 20px;
   background: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(26px);
   text-align: center;
@@ -177,7 +177,7 @@ table {
 .Main h2 {
   font-size: 36px;
   font-weight: 600;
-  margin: 0 0 6px;
+  margin: 0 0 8px;
   color: #f9f9f9;
 }
 .Main h3 {
@@ -196,11 +196,11 @@ table {
   max-width: 100%;
 }
 .Main .control {
-  border: 0;
+  border: none;
   border-radius: 8px;
-  width: 100%;
+  max-width: 100%;
   height: 56px;
-  padding: 0px 2px;
+  padding: 0px 16px;
   background: rgba(255, 255, 255, 0.1);
   color: #f9f9f9;
   margin: 8px 0;
@@ -209,9 +209,9 @@ table {
   transition: 0.4s;
 }
 .Main-form {
-  width: 100%;
-  margin: 0;
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  padding: 0 22px;
 }
 .Main-form > button.control {
   cursor: pointer;
@@ -226,27 +226,6 @@ table {
   text-align: center;
   letter-spacing: 2px;
   transition: all 0.375s;
-}
-.Main .spinner {
-  position: absolute;
-  top: 50%;
-  right: 16px;
-  translate: 0 -50%;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  border: 3px solid #ccc9e1;
-  border-top-color: #8f44fd;
-  opacity: 0;
-  animation: spin 1s infinite linear;
-}
-.Main .spinner .visible {
-  opacity: 1;
-}
-.Main .indicator {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 @keyframes spin {
   100% {
@@ -290,9 +269,6 @@ table {
   text-align: left;
   height: 30px;
   text-transform: capitalize;
-}
-.Main .Strength div {
-  color: #fff;
 }
 
 /*# sourceMappingURL=index.css.map */

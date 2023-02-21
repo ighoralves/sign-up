@@ -12,10 +12,14 @@
   &-card {
     width: 400px;
     padding: 100px 30px 32px;
-    border-radius: 1.25rem;
+    border-radius: 20px;
     background: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(26px);
     text-align: center;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // flex-direction: column;
   }
 
   &-image {
@@ -38,9 +42,10 @@
   
   
   h2 {
+    // margin: 0 auto;
     font-size: 36px;
     font-weight: 600;
-    margin: 0 0 6px;
+    margin: 0 0 8px;
     color: #f9f9f9;
   }
 
@@ -50,6 +55,10 @@
     font-weight: 500;
     font-size: 1rem;
   } 
+
+  // &-form {
+  //   padding: 10px;
+  // }
 
   .username {
     position: relative;
@@ -63,11 +72,11 @@
   }
 
   .control {
-    border: 0;
+    border: none;
     border-radius: 8px;
-    width: 100%;
+    max-width: 100%;
     height: 56px;
-    padding: 0px 2px;
+    padding: 0px 16px;
     background: rgba(255, 255, 255, 0.1);
     color: #f9f9f9;
     margin: 8px 0;
@@ -77,12 +86,12 @@
   }
 
   &-form {
-    width: 100%;
-    margin: 0;
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    padding: 0 22px;
   }
 
-  &-form > button.control {
+ &-form > button.control {
     cursor: pointer;
     // width: 100%;
     height: 56px;
@@ -99,29 +108,29 @@
   }
 
   
-  .spinner {
-    position: absolute;
-    top: 50%;
-    right: 16px;
-    translate: 0 -50%;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    border: 3px solid #ccc9e1;
-    border-top-color: #8f44fd;
-    opacity: 0;
-    animation: spin 1s infinite linear;
+  // .spinner {
+  //   position: absolute;
+  //   top: 50%;
+  //   right: 16px;
+  //   translate: 0 -50%;
+  //   width: 24px;
+  //   height: 24px;
+  //   border-radius: 50%;
+  //   border: 3px solid #ccc9e1;
+  //   border-top-color: #8f44fd;
+  //   opacity: 0;
+  //   animation: spin 1s infinite linear;
 
-    .visible {
-      opacity: 1;
-    }
-  }
+  //   .visible {
+  //     opacity: 1;
+  //   }
+  // }
 
-  .indicator {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+  // .indicator {
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: space-between;
+  // }
 
   @keyframes spin {
     100% {
@@ -175,9 +184,5 @@
     text-align: left;
     height: 30px;
     text-transform: capitalize;
-    
-    div {
-      color: #fff;
-    }
   }
 }
