@@ -1,4 +1,4 @@
-<h1 align="center"> Portfolio </h1>
+<h1 align="center"> Sign-up</h1>
 
 <p align="center">
  <br/>
@@ -33,9 +33,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 <!-- O Habits é um app para ajudar a rastrear os hábitos. -->
 
-- [Visite o projeto online](https://ighoralves.github.io/Portfolio/)
-
-## 🔖 Layout
+- [Visite o projeto online](https://ighoralves.github.io/sign-up/)
 
 ## :memo: Licença
 
