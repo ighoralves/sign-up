@@ -17,9 +17,9 @@
 
 <br>
 
-<!-- <p align="center">
+<p align="center">
   <img alt="projeto Portfolio" src=".github/preview.jpg" width="100%">
-</p> -->
+</p>
 
 ## 🚀 Tecnologias
 
