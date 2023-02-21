@@ -1,0 +1,298 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+b,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  width: 100%;
+  height: 100%;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.Main {
+  background: url("bg-signin.6745ad87.jpg");
+  height: 100vh;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  animation: rotate 5s infinite alternate linear;
+  color: #868b94;
+}
+.Main-card {
+  width: 400px;
+  padding: 100px 30px 32px;
+  border-radius: 1.25rem;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(26px);
+  text-align: center;
+}
+.Main-image {
+  width: auto;
+  display: table;
+  border-radius: 50%;
+  background: #363945;
+  padding: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.Main-image img {
+  height: 100px;
+  border-radius: 50%;
+}
+.Main h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin: 0 0 6px;
+  color: #f9f9f9;
+}
+.Main h3 {
+  color: #837f90;
+  margin: 0 0 40px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.Main .username {
+  position: relative;
+}
+.Main button {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  max-width: 100%;
+}
+.Main .control {
+  border: 0;
+  border-radius: 8px;
+  width: 100%;
+  height: 56px;
+  padding: 0px 2px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #f9f9f9;
+  margin: 8px 0;
+  font-family: inherit;
+  font-size: 16px;
+  transition: 0.4s;
+}
+.Main-form {
+  width: 100%;
+  margin: 0;
+  display: grid;
+}
+.Main-form > button.control {
+  cursor: pointer;
+  height: 56px;
+  padding: 0 16px;
+  background: #f9f9f9;
+  color: #000000;
+  border: 0;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 2px;
+  transition: all 0.375s;
+}
+.Main .spinner {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  translate: 0 -50%;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 3px solid #ccc9e1;
+  border-top-color: #8f44fd;
+  opacity: 0;
+  animation: spin 1s infinite linear;
+}
+.Main .spinner .visible {
+  opacity: 1;
+}
+.Main .indicator {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@keyframes spin {
+  100% {
+    rotate: 1turn;
+  }
+}
+@keyframes rotate {
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.Main #bars {
+  margin: 8px 0;
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 6px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.1);
+}
+.Main #bars div {
+  height: 6px;
+  border-radius: 3px;
+  transition: 0.4s;
+  width: 0%;
+}
+.Main #bars.weak div {
+  background: #bc2b38;
+  width: 33.33%;
+}
+.Main #bars.medium div {
+  background: #d36f30;
+  width: 66.66%;
+}
+.Main #bars.strong div {
+  background: #1eb965;
+  width: 100%;
+}
+.Main .Strength {
+  text-align: left;
+  height: 30px;
+  text-transform: capitalize;
+}
+.Main .Strength div {
+  color: #fff;
+}
+
+/*# sourceMappingURL=index.css.map */

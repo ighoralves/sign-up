@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./dist/index.css">
+  <title>Sign Up</title>
+</head>
+
+<body>
+  <main class="Main">
+    <div class="Main-card">
+      <div class="Main-image">
+        <img src="./assets/img/peeps-avatar-alpha.png" alt="" />
+      </div>
+      <h2>Sign Up</h2>
+      <h3>Enter your credentials</h3>
+      <form class="Main-form">
+        <div class="username">
+          <input autocomplete="off" spellcheck="false" class="control" type="email" placeholder="Email"
+            value="ighor@gmail.com" />
+          <div id="spinner" class="Spinner"></div>
+        </div>
+        <input spellcheck="false" class="control" id="password" type="password" placeholder="Password" />
+        <div id="bars">
+          <div></div>
+        </div>
+        <div class="strength" id="strength"></div>
+        <button class="control" type="button">JOIN NOW</button>
+      </form>
+    </div>
+  </main>
+  <script src="./dist/index.js"></script>
+</body>
+
+</html>
