@@ -160,6 +160,10 @@ table {
   backdrop-filter: blur(26px);
   text-align: center;
 }
+.Main-content {
+  width: 300px;
+  margin: 0 auto;
+}
 .Main-image {
   width: auto;
   display: table;
@@ -186,14 +190,10 @@ table {
   font-weight: 500;
   font-size: 1rem;
 }
-.Main .username {
-  position: relative;
-}
 .Main button {
   background: transparent;
   border: 0;
   cursor: pointer;
-  max-width: 100%;
 }
 .Main .control {
   border: none;
@@ -221,11 +221,32 @@ table {
   color: #000000;
   border: 0;
   font-family: inherit;
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 600;
   text-align: center;
   letter-spacing: 2px;
   transition: all 0.375s;
+}
+.Main .spinner {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  translate: 0 -50%;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 3px solid #ccc9e1;
+  border-top-color: #8f44fd;
+  opacity: 0;
+  animation: spin 1s infinite linear;
+}
+.Main .spinner .visible {
+  opacity: 1;
+}
+.Main .indicator {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 @keyframes spin {
   100% {
