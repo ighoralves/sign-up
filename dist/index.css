@@ -167,7 +167,7 @@ table {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 25px;
+  gap: 70px;
   cursor: pointer;
 }
 .Main-icon .uil {
@@ -176,14 +176,13 @@ table {
 }
 .Main-icon .uil1 {
   color: #fff;
-  font-size: 30px;
+  font-size: 29px;
 }
 .Main-image {
   width: auto;
   display: table;
   border-radius: 50%;
   background: #363945;
-  padding: 5px;
   border: 1px solid rgba(255, 255, 255, 0.4);
   margin: 0 auto;
   margin-bottom: 5px;
