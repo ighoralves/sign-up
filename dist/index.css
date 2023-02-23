@@ -161,24 +161,22 @@ table {
   backdrop-filter: blur(26px);
   text-align: center;
 }
-.Main-content {
-  margin: 0 auto;
-}
 .Main-icon {
-  margin-top: 30px;
+  margin-top: 40px;
   margin-bottom: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 25px;
   cursor: pointer;
 }
 .Main-icon .uil {
-  color: #000;
+  color: #fff;
   font-size: 28px;
-  background: #fff;
-  border-radius: 8px;
-  padding: 3px 2px 1px;
+}
+.Main-icon .uil1 {
+  color: #fff;
+  font-size: 30px;
 }
 .Main-image {
   width: auto;
@@ -188,23 +186,16 @@ table {
   padding: 5px;
   border: 1px solid rgba(255, 255, 255, 0.4);
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 .Main-image img {
   height: 100px;
   border-radius: 50%;
 }
 .Main h2 {
-  font-size: 36px;
+  font-size: 34px;
   font-weight: 600;
-  margin: 0 0 8px;
   color: #f9f9f9;
-}
-.Main h3 {
-  color: #837f90;
-  margin: 0 0 40px;
-  font-weight: 500;
-  font-size: 1rem;
 }
 .Main button {
   background: transparent;
