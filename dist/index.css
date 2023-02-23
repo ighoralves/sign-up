@@ -143,8 +143,9 @@ table {
 
 .Main {
   background: url("bg-signin.6745ad87.jpg");
+  object-fit: cover;
   height: 100vh;
-  max-width: 100%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -154,15 +155,30 @@ table {
 }
 .Main-card {
   width: 400px;
-  padding: 100px 30px 32px;
+  padding: 60px 0px 32px;
   border-radius: 20px;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(26px);
   text-align: center;
 }
 .Main-content {
-  width: 300px;
   margin: 0 auto;
+}
+.Main-icon {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  cursor: pointer;
+}
+.Main-icon .uil {
+  color: #000;
+  font-size: 28px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 3px 2px 1px;
 }
 .Main-image {
   width: auto;
